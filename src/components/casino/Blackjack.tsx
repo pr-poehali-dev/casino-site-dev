@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-import { Cards, Plus, Square } from "lucide-react";
+import { PlayCircle, Plus, Square } from "lucide-react";
 
 const Blackjack = () => {
   const [playerCards, setPlayerCards] = useState([11, 7]);
@@ -127,7 +127,7 @@ const Blackjack = () => {
               onClick={newGame}
               className="bg-purple-600 hover:bg-purple-700"
             >
-              <Cards className="w-4 h-4 mr-1" />
+              <PlayCircle className="w-4 h-4 mr-1" />
               Новая игра
             </Button>
           )}
