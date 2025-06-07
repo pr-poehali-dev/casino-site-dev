@@ -1,11 +1,20 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Hero from "@/components/casino/Hero";
+import SlotMachine from "@/components/casino/SlotMachine";
+import Roulette from "@/components/casino/Roulette";
+import Blackjack from "@/components/casino/Blackjack";
+import Balance from "@/components/casino/Balance";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+      <div className="container mx-auto px-4 py-8">
+        <Hero />
+        <Balance />
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-8">
+          <SlotMachine />
+          <Roulette />
+          <Blackjack />
+        </div>
       </div>
     </div>
   );
